@@ -1,0 +1,34 @@
+{
+  "name": "clang-tools-prebuilt",
+  "version": "0.1.0",
+  "description": "Install clang tools prebuilt binaries for the command-line use using npm",
+  "bin": {
+    "clang-tidy": "tools/clang-tidy.js",
+    "clang-include-fixer": "tools/clang-include-fixer.js",
+    "find-all-symbols": "tools/find-all-symbols.js"
+  },
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hokein/clang-tools-prebuilt.git"
+  },
+  "keywords": [
+    "clang", "clang-tools", "clang-tidy", "include-fixer"
+  ],
+  "author": "hokein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hokein/clang-tools-prebuilt/issues"
+  },
+  "dependencies": {
+     "home-path": "^0.1.1",
+     "mkdirp": "^0.5.0",
+     "nugget": "^1.5.1",
+     "path-exists": "^1.0.0"
+  },
+  "homepage": "https://github.com/hokein/clang-tools-prebuilt"
+}
