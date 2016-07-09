@@ -9,7 +9,7 @@
   },
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tape test/*.js",
     "postinstall": "node install.js"
   },
   "repository": {
@@ -29,6 +29,9 @@
      "mkdirp": "^0.5.0",
      "nugget": "^1.5.1",
      "path-exists": "^1.0.0"
+  },
+  "devDependencies": {
+    "tape": "^3.0.2"
   },
   "homepage": "https://github.com/hokein/clang-tools-prebuilt"
 }
