@@ -9,8 +9,10 @@
   },
   "main": "main.js",
   "scripts": {
-    "test": "tape test/*.js",
-    "postinstall": "node install.js"
+    "cache-clean": "rm -rf ~/.clang-tools && rm -rf dist",
+    "postinstall": "node install.js",
+    "pretest": "npm run cache-clean && node install.js",
+    "test": "tape test/*.js"
   },
   "repository": {
     "type": "git",
