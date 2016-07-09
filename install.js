@@ -3,7 +3,7 @@ const path = require('path')
 const mkdirp = require('mkdirp')
 const exec = require('child_process').exec
 
-const dest = path.join(__dirname, './prebuilt_binaries/')
+const dest = path.join(__dirname, './dist/')
 
 download({
   'revision': '274142',
