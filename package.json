@@ -1,6 +1,6 @@
 {
   "name": "clang-tools-prebuilt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "clang_revision": "274369",
   "description": "Install clang tools prebuilt binaries for the command-line use using npm",
   "bin": {
