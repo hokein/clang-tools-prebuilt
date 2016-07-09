@@ -1,6 +1,7 @@
 {
   "name": "clang-tools-prebuilt",
   "version": "0.1.0",
+  "clang_revision": "274142",
   "description": "Install clang tools prebuilt binaries for the command-line use using npm",
   "bin": {
     "clang-tidy": "tools/clang-tidy.js",

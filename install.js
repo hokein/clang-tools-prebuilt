@@ -1,9 +1,9 @@
 const download = require('./download.js')
+const revision = require('./package').clang_revision
+const exec = require('child_process').exec
 const path = require('path')
 const mkdirp = require('mkdirp')
-const exec = require('child_process').exec
 const os = require('os')
-
 const dest = path.join(__dirname, './dist/')
 
 const platform = os.platform()
@@ -16,7 +16,7 @@ const platforms = {
 if (!platforms[platform]) throw new Error('Unknown platform: ' + platform)
 
 download({
-  'revision': '274142',
+  'revision': revision,
   'platform': platforms[platform]
 }, (err, file_path) => {
   mkdirp(dest, (error) => {
