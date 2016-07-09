@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/hokein/clang-tools-prebuilt.svg?branch=master)](https://travis-ci.org/hokein/clang-tools-prebuilt)
 
+[![NPM](https://nodei.co/npm/clang-tools-prebuilt.png?downloads=true)](https://nodei.co/npm/clang-tools-prebuilt/)
+
 Install clang tools prebuilt binaries for command-line usage via npm. The module
 helps you easily install clang tools command for use without compile anything.
 
