@@ -1,10 +1,12 @@
 {
   "name": "clang-tools-prebuilt",
   "version": "0.1.0",
-  "clang_revision": "274142",
+  "clang_revision": "274369",
   "description": "Install clang tools prebuilt binaries for the command-line use using npm",
   "bin": {
+    "clang-apply-replacements": "tools/clang-apply-replacements.js",
     "clang-tidy": "tools/clang-tidy.js",
+    "clang-rename": "tools/clang-rename.js",
     "clang-include-fixer": "tools/clang-include-fixer.js",
     "find-all-symbols": "tools/find-all-symbols.js"
   },
