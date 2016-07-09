@@ -2,12 +2,22 @@ const download = require('./download.js')
 const path = require('path')
 const mkdirp = require('mkdirp')
 const exec = require('child_process').exec
+const os = require('os')
 
 const dest = path.join(__dirname, './dist/')
 
+const platform = os.platform()
+const platforms = {
+  darwin: 'mac',
+  linux: 'linux',
+  freebsd: 'linux'
+}
+
+if (!platforms[platform]) throw new Error('Unknown platform: ' + platform)
+
 download({
   'revision': '274142',
-  'platform': 'mac'
+  'platform': platforms[platform]
 }, (err, file_path) => {
   mkdirp(dest, (error) => {
     if (error) {
