@@ -9,7 +9,7 @@ helps you easily install clang tools command for use without compile anything.
 
 Currently, the module provides clang tools in [clang-tools-extra](http://clang.llvm.org/extra/):
   * clang-apply-replacements
-  * clang-rename
+  * [clang-rename](http://clang.llvm.org/extra/clang-rename.html)
   * [clang-tidy](http://clang.llvm.org/extra/clang-tidy/index.html)
   * [clang-include-fixer](http://clang.llvm.org/extra/include-fixer.html)
   * find-all-symbols
