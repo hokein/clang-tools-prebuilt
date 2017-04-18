@@ -1,5 +1,7 @@
 //#!/usr/bin/env node
 
+'use strict';
+
 const clang_tools_bin_dir = require('./')
 const path = require('path')
 const proc = require('child_process')
